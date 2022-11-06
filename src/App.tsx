@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { AddUser, Users, Weather } from "./pages";
+import { useDispatch } from "react-redux";
+import { User } from "./types";
+import { setUsers } from "./reducers/userReducer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		const users: User[] = JSON.parse(
+			window.localStorage.getItem("users") || "[]"
+		);
+		dispatch(setUsers(users));
+	}, [dispatch]);
+	return (
+		<Routes>
+			<Route path="/" element={<Layout />}>
+				<Route path="add-user" element={<AddUser />} />
+				<Route path="users" element={<Users />} />
+				<Route path="weather" element={<Weather />} />
+			</Route>
+		</Routes>
+	);
 }
 
 export default App;
