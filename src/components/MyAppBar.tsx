@@ -183,11 +183,10 @@ export const MyAppBar = () => {
 			>
 				<Toolbar
 					sx={{
-						display: { sx: "flex", md: "flex" },
-						justifyContent: "space-between",
+						display: "flex",
 					}}
 				>
-					<Box sx={{ width: 50, display: { md: "none" } }}>
+					<Box sx={{ width: 50, flexGrow: 1, display: { md: "none" } }}>
 						<Link to="add-user">
 							<img src="images/logo.svg" alt="" />
 						</Link>

@@ -17,7 +17,7 @@ export const WeatherWidget = ({ weatherData }: WeatherWidgetProps) => {
 				backgroundColor: "#A2E0FF",
 				borderRadius: 5,
 				color: "white",
-				width: "70%",
+				width: { xs: "90%", md: "70%" },
 				height: "20vh",
 				marginInline: "auto",
 				fontFamily: "Podkova",
