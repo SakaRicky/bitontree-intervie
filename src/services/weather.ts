@@ -10,7 +10,7 @@ export const getWeather = async (state: string): Promise<WeatherData> => {
 		method: "GET",
 		params: { q: state },
 		headers: {
-			"X-RapidAPI-Key": "0f8a45e3e3msh9481dcbf8f9ed4dp19fdf3jsn47ee12586c36",
+			"X-RapidAPI-Key": process.env.REACT_APP_WEATHER_API_KEY,
 			"X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
 		},
 	};
