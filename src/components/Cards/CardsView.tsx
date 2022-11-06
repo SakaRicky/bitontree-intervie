@@ -15,9 +15,15 @@ export const CardsView = ({ users, allUsers }: CardsViewProps) => {
 			<Typography color={grey["500"]}>Card View</Typography>
 			{allUsers.length > 0 ? (
 				users.length > 0 ? (
-					<Grid container spacing={2} sx={{ marginTop: -0.5 }}>
+					<Grid
+						container
+						spacing={2}
+						alignItems="center"
+						justifyContent="center"
+						sx={{ marginTop: -0.5 }}
+					>
 						{users.map(user => (
-							<Grid item key={user.email}>
+							<Grid item xs={8} sm={6} md={4} key={user.email}>
 								<Card user={user} />
 							</Grid>
 						))}

@@ -16,12 +16,14 @@ export const ListItem = ({ user }: ListItemProps) => {
 				sx={{
 					display: "flex",
 					justifyContent: "space-between",
+					alignItems: "center",
 					backgroundColor: itemHovered ? "white" : grey["100"],
 					m: "0.5rem 0",
 					borderRadius: 1,
 					p: "0.5rem 1rem",
 					overflow: "auto",
 					cursor: "pointer",
+					whiteSpace: "nowrap",
 				}}
 				onMouseEnter={() => setItemHovered(true)}
 				onMouseLeave={() => setItemHovered(false)}

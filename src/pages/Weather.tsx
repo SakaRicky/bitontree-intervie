@@ -56,7 +56,7 @@ export const Weather = () => {
 							justifyContent: "center",
 						}}
 					>
-						<Box marginTop={6} width="40%">
+						<Box marginTop={6} sx={{ width: { xs: "70%", md: "40%" } }}>
 							<Typography color={grey["600"]} textAlign="center">
 								Select State
 							</Typography>

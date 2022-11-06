@@ -31,8 +31,7 @@ export const WeatherItem = ({ label, data }: WeatherItemProps) => {
 			</Typography>
 			<Typography
 				fontFamily={"Podkova"}
-				fontSize={55}
-				sx={{ alignSelf: "center" }}
+				sx={{ alignSelf: "center", fontSize: { xs: 40, md: 55 } }}
 			>
 				{data}
 			</Typography>

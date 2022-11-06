@@ -6,7 +6,7 @@ export const VerticalLine = () => {
 		<Box
 			sx={{
 				width: "3px",
-				height: "75px",
+				height: { xs: "55px", md: "75px" },
 				backgroundColor: "white",
 				display: "block",
 				marginBlock: "auto",

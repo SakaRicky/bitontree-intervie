@@ -86,7 +86,7 @@ export const AddUserForm = () => {
 							<Typography width="30%" color={grey["500"]}>
 								Phone
 							</Typography>
-							<MyTextField name="phone" label="Phone" type="phone" />
+							<MyTextField name="phone" label="Phone" type="tel" />
 						</Box>
 						<Box sx={{ display: "flex", alignItems: "center", m: "1rem 0" }}>
 							<Typography width="30%" color={grey["500"]}>

@@ -93,6 +93,7 @@ export const MyAppBar = () => {
 						};
 					}}
 					to="add-user"
+					onClick={handleMenuClose}
 				>
 					<AddUserIcon />
 					<Typography variant="body1">Add User</Typography>
@@ -115,6 +116,7 @@ export const MyAppBar = () => {
 						};
 					}}
 					to="users"
+					onClick={handleMenuClose}
 				>
 					<UsersIcon />
 					<Typography variant="body1">Users</Typography>
@@ -137,6 +139,7 @@ export const MyAppBar = () => {
 						};
 					}}
 					to="weather"
+					onClick={handleMenuClose}
 				>
 					<WeatherIcon />
 					<Typography variant="body1">Weather</Typography>

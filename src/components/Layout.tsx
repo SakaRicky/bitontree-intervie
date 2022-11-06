@@ -12,7 +12,7 @@ export const Layout = () => {
 	return (
 		<Box
 			sx={{
-				height: "100vh",
+				height: { md: "100vh" },
 				backgroundColor: "#EBF0F4",
 				display: "flex",
 				alignItems: "center",
@@ -25,6 +25,7 @@ export const Layout = () => {
 					width: "100%",
 					display: "flex",
 					gap: 4,
+					paddingBottom: 4,
 				}}
 			>
 				<Grid container columnSpacing={2} sx={{ height: "100%" }}>

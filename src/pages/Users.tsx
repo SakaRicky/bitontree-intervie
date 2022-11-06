@@ -40,7 +40,7 @@ export const Users = () => {
 							placeholder="Search user by name..."
 							onChange={e => setSearchText(e.target.value)}
 							sx={{
-								width: "40%",
+								width: { xs: "80%", md: "40%" },
 								marginTop: 1,
 
 								"& fieldset": {

@@ -11,7 +11,7 @@ interface UsersListViewProps {
 
 export const UsersListView = ({ users, allUsers }: UsersListViewProps) => {
 	return (
-		<Box sx={{ marginTop: "2rem" }}>
+		<Box sx={{ marginTop: "2rem", paddingBottom: 4 }}>
 			<Typography color={grey["500"]}>List View</Typography>
 
 			{allUsers.length > 0 ? (
