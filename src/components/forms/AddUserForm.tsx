@@ -40,7 +40,9 @@ export const AddUserForm = () => {
 	});
 
 	return (
-		<Box sx={{ width: "60%", margin: "0 auto", paddingTop: 8 }}>
+		<Box
+			sx={{ width: { xs: "90%", md: "60%" }, margin: "0 auto", paddingTop: 8 }}
+		>
 			<Formik
 				initialValues={INITIAL_FORM_STATE}
 				validationSchema={FORM_VALIDATION}
